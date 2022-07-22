@@ -41,6 +41,7 @@
 }
 
 .partret {
+    z-index: 1;
     position: absolute;
     width: 518px;
     height: 631px;
@@ -50,6 +51,23 @@
     background: url(../../imeg/Bitmap\ Copy.png);
     background-repeat: round;
 }
+
+.line1 {
+    overflow: hidden;
+    position: absolute;
+    right: 1145px;
+    top: 412px;
+}
+
+.line2 {
+    overflow: hidden;
+    position: absolute;
+    left: 902px;
+    top: 4px;
+   
+}
+
+
 
 .hero__text {
     font-family: "Barlow", sans-serif;
@@ -80,12 +98,17 @@
     font-family: 'Karla';
     font-style: normal;
     font-weight: 700;
-    font-size: 13px;
+    // font-size: 13px;
     line-height: 15px;
     text-align: center;
     letter-spacing: 1.5px;
 
     color: #FFFFFF;
+
+    &:hover {
+        color: black;
+        background-color: rgba(255, 255, 255, 1);
+    }
 
 }
 
@@ -98,6 +121,143 @@
     background: #FFFFFF;
 }
 
-.hero__button:hover {
-    // background: #66D2CF;
+
+// section2 style
+.different {
+    margin-top: 390px;
+    display: flex;
+    flex-direction: column;
+    width: 1053px;
+
+    &__line {
+        height: 2px;
+        width: 150px;
+        background-color: rgba(195, 150, 198, 1)
+    }
+
+    &__title {
+        font-family: "DM Serif Display";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 72px;
+        line-height: 64px;
+        letter-spacing: -1px;
+        color: #2C2830;
+        margin-top: 55px;
+    }
+
+    &__list {
+        list-style: none;
+        display: flex;
+        margin-left: -38px;
+
+        &>li>h3 {
+            font-family: 'DM Serif Display';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 38px;
+            letter-spacing: -0.388889px;
+            color: #2C2830;
+        }
+
+        &>li>p {
+            font-family: 'Karla', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            color: #837D88;
+            width: 350px;
+
+            font-family: 'Karla';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            /* or 162% */
+
+
+            color: #837D88;
+
+        }
+
+        &>li+li {
+            margin-left: 30px;
+        }
+    }
+
+    &__item1::before {
+        content: url(../../imeg/snappy.svg);
+    }
+
+    &__item2::before {
+        content: url(../../imeg/prices.svg);
+    }
+
+    &__item3::before {
+        content: url(../../imeg/people.svg);
+    }
+}
+
+// section3 style
+.work {
+    background-color: #2D2641;
+    margin-top: 158px;
+    padding: 26px 81px;
+    width: 1000px;
+
+    &__box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__title {
+        width: 433px;
+        font-family: 'DM Serif Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 56px;
+        line-height: 56px;
+        /* or 100% */
+
+        letter-spacing: -0.777778px;
+
+        color: #FFFFFF;
+    }
+    &__btn{
+      
+        left: 116px;
+        top: 403px;
+        box-sizing: border-box;
+        border: 1.5px solid #FFFFFF;
+        background: inherit;
+        color: white;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-family: 'Karla';
+        font-style: normal;
+        font-weight: 700;
+        // font-size: 13px;
+        line-height: 15px;
+        text-align: center;
+        letter-spacing: 1.5px;
+        z-index: 1;
+        color: #FFFFFF;
+    
+        &:hover {
+            color: black;
+            background-color: rgba(255, 255, 255, 1);
+        }
+    }
+   
+}
+.line3{   
+    position: absolute;
+    height: -1px;
+    contain: "";
+    background: url(../../imeg/Group\ 10.png);
+    background-repeat: round;
+    margin-left: 486px;
 }

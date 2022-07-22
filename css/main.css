@@ -404,6 +404,11 @@ img {
   letter-spacing: 1.5px;
   color: #2C2830;
 }
+.header .header__btn:hover {
+  color: azure;
+  border: 1.5px solid rgb(44, 40, 48);
+  background-color: rgb(44, 40, 48);
+}
 .header .header__box {
   display: flex;
 }
@@ -479,6 +484,7 @@ img {
 }
 
 .partret {
+  z-index: 1;
   position: absolute;
   width: 518px;
   height: 631px;
@@ -487,6 +493,20 @@ img {
   contain: "";
   background: url(../../imeg/Bitmap\ Copy.png);
   background-repeat: round;
+}
+
+.line1 {
+  overflow: hidden;
+  position: absolute;
+  right: 1145px;
+  top: 412px;
+}
+
+.line2 {
+  overflow: hidden;
+  position: absolute;
+  left: 902px;
+  top: 4px;
 }
 
 .hero__text {
@@ -518,11 +538,14 @@ img {
   font-family: "Karla";
   font-style: normal;
   font-weight: 700;
-  font-size: 13px;
   line-height: 15px;
   text-align: center;
   letter-spacing: 1.5px;
   color: #FFFFFF;
+}
+.hero__button:hover {
+  color: black;
+  background-color: rgb(255, 255, 255);
 }
 
 .line {
@@ -532,4 +555,186 @@ img {
   left: 113px;
   top: 95px;
   background: #FFFFFF;
+}
+
+.different {
+  margin-top: 390px;
+  display: flex;
+  flex-direction: column;
+  width: 1053px;
+}
+.different__line {
+  height: 2px;
+  width: 150px;
+  background-color: rgb(195, 150, 198);
+}
+.different__title {
+  font-family: "DM Serif Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 64px;
+  letter-spacing: -1px;
+  color: #2C2830;
+  margin-top: 55px;
+}
+.different__list {
+  list-style: none;
+  display: flex;
+  margin-left: -38px;
+}
+.different__list > li > h3 {
+  font-family: "DM Serif Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 38px;
+  letter-spacing: -0.388889px;
+  color: #2C2830;
+}
+.different__list > li > p {
+  font-family: "Karla", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #837D88;
+  width: 350px;
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  /* or 162% */
+  color: #837D88;
+}
+.different__list > li + li {
+  margin-left: 30px;
+}
+.different__item1::before {
+  content: url(../../imeg/snappy.svg);
+}
+.different__item2::before {
+  content: url(../../imeg/prices.svg);
+}
+.different__item3::before {
+  content: url(../../imeg/people.svg);
+}
+
+.work {
+  background-color: #2D2641;
+  margin-top: 158px;
+  padding: 26px 81px;
+  width: 1000px;
+}
+.work__box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.work__title {
+  width: 433px;
+  font-family: "DM Serif Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 56px;
+  /* or 100% */
+  letter-spacing: -0.777778px;
+  color: #FFFFFF;
+}
+.work__btn {
+  left: 116px;
+  top: 403px;
+  box-sizing: border-box;
+  border: 1.5px solid #FFFFFF;
+  background: inherit;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 700;
+  line-height: 15px;
+  text-align: center;
+  letter-spacing: 1.5px;
+  z-index: 1;
+  color: #FFFFFF;
+}
+.work__btn:hover {
+  color: black;
+  background-color: rgb(255, 255, 255);
+}
+
+.line3 {
+  position: absolute;
+  height: -1px;
+  contain: "";
+  background: url(../../imeg/Group\ 10.png);
+  background-repeat: round;
+  margin-left: 486px;
+}
+
+.footer {
+  margin-top: 215px;
+}
+.footer__box {
+  margin-left: 23px;
+  display: flex;
+  flex-direction: column;
+}
+.footer__logo {
+  display: flex;
+  align-items: center;
+  padding-bottom: 36px;
+  border-bottom: 1px solid rgb(218, 218, 218);
+}
+.footer__icon {
+  margin-left: auto;
+  list-style: none;
+  display: flex;
+}
+.footer__icon > li + li {
+  margin-left: 24px;
+}
+.footer__icon > li:hover svg path {
+  fill: rgb(44, 40, 48);
+}
+.footer__navbar {
+  margin-top: 48px;
+  justify-content: space-between;
+  display: flex;
+  list-style: none;
+}
+.footer__navbar__box {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.footer__navbar > div + div {
+  margin-left: 100px;
+}
+.footer__navbar > div > ul {
+  list-style: none;
+  flex-direction: column;
+  display: flex;
+  margin-left: -39px;
+}
+.footer__navbar > div > strong {
+  font-family: "Karla", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 1.5px;
+  color: #837D88;
+}
+.footer__navbar > div > ul > li > a {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 30px;
+  letter-spacing: 1.5px;
+  color: #2D2641;
 }/*# sourceMappingURL=main.css.map */
